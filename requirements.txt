@@ -1,0 +1,6 @@
+streamlit
+arxiv
+requests
+beautifulsoup4
+google-generativeai
+groq
