@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [data-testid="stApp"] {
+    background-color: #0E1117 !important;
+    font-family: 'Inter', sans-serif !important;
+    color: #e2e8f0 !important;
+}
+/* Hide standard elements */
+footer, header, [data-testid="stAppDeployButton"] { display: none !important; }
+
+/* Top Nav */
+.top-nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 24px; background: rgba(38,39,48,0.4);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.brand-title { font-size: 1.25rem; font-weight: 700; color: #00d4ff; display: flex; align-items: center; gap: 8px; }
+.status-pill { font-size: 0.8rem; background: rgba(0, 212, 255, 0.1); color: #00d4ff; padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.3); }
+
+/* Dashboard structural constraints */
+.main .block-container {
+    max-width: 100% !important;
+    padding: 1rem 1rem 6rem 1rem !important; /* bottom padding for chat input */
+}
+
+/* Glass Cards */
+.glass-card {
+    background: rgba(38,39,48,0.3);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: transform 0.2s;
+}
+.glass-card:hover { border-color: rgba(0, 212, 255, 0.2); }
+.card-source { font-size: 0.75rem; font-weight: 600; color: #a78bfa; margin-bottom: 4px; text-transform: uppercase; }
+.card-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 8px; line-height: 1.3; }
+.card-abs { font-size: 0.85rem; color: #94a3b8; line-height: 1.5; }
+
+/* Report content tweaks */
+.stMarkdown h2 { color: #00d4ff !important; font-size: 1.2rem !important; margin-top: 1rem !important; }
+.stMarkdown h3 { color: #a78bfa !important; font-size: 1rem !important; margin-top: 1rem !important; }
