@@ -4,3 +4,9 @@ requests
 beautifulsoup4
 google-generativeai
 groq
+PyMuPDF
+scholarly
+biopython
+python-dotenv
+markdown
+xhtml2pdf
