@@ -1,8 +1,4 @@
-"""
-AURA 🔮 – AI Research Companion
-Phase 1: Auth removed, renamed from Archimedes → AURA, light UI cleanup.
-Core research logic is completely unchanged.
-"""
+
 
 import streamlit as st
 import arxiv
