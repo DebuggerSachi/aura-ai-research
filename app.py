@@ -19,7 +19,7 @@ from io import BytesIO
 from utils.llm import analyze_agreement, extract_concepts, check_paper_authenticity
 
 # ─────────────────────────────────────────────────────────────────────────────
-# PDF export helper (unchanged)
+# PDF export helper
 # ─────────────────────────────────────────────────────────────────────────────
 def create_pdf(md_text):
     html_text = markdown.markdown(md_text)
@@ -63,7 +63,7 @@ st.set_page_config(
 )
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Session state initialisation (no auth keys needed)
+# Session state initialisation
 # ─────────────────────────────────────────────────────────────────────────────
 if 'chat_history' not in st.session_state:
     st.session_state['chat_history'] = [
@@ -550,7 +550,7 @@ def paper_link_html(url: str, style_class: str = "pdf-link-seminal") -> str:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# API / SEARCH MODULES  (all logic unchanged)
+# API / SEARCH MODULES 
 # ─────────────────────────────────────────────────────────────────────────────
 
 def search_arxiv(query, max_results=2):
@@ -738,7 +738,7 @@ def search_google_scholar(query, max_results=2):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# PDF citation extractor helpers  (unchanged)
+# PDF citation extractor helpers 
 # ─────────────────────────────────────────────────────────────────────────────
 def get_arxiv_id(link):
     if not link:
@@ -787,7 +787,7 @@ def search_reference_on_arxiv(reference):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# LLM / GROQ HELPERS  (unchanged — AURA label in system prompts)
+# LLM / GROQ HELPERS  (AURA label in system prompts)
 # ─────────────────────────────────────────────────────────────────────────────
 FALLBACK_MODELS = [
     "llama-3.1-8b-instant",
